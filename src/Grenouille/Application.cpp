@@ -13,6 +13,14 @@
 #include <iostream>
 #include <string>
 
+Application::Application(const std::string& title, int32_t width, int32_t height, float scaleFactor) noexcept
+{
+    _title = title;
+    _width = width;
+    _height = height;
+    _scaleFactor = scaleFactor;
+}
+
 void Application::Run()
 {
     FrameMarkStart("App Run");
@@ -74,10 +82,10 @@ bool Application::Initialize()
     const auto primaryMonitor = glfwGetPrimaryMonitor();
     const auto primaryMonitorVideoMode = glfwGetVideoMode(primaryMonitor);
 
-    constexpr int windowWidth = 1920;
-    constexpr int windowHeight = 1080;
+    const auto windowWidth = _width;
+    const auto windowHeight = _height;
 
-    _windowHandle = glfwCreateWindow(windowWidth, windowHeight, "Project Template", nullptr, nullptr);
+    _windowHandle = glfwCreateWindow(windowWidth, windowHeight, _title.data(), nullptr, nullptr);
     if (_windowHandle == nullptr)
     {
         spdlog::error("Glfw: Unable to create window");

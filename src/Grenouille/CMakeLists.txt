@@ -9,6 +9,7 @@ set(sourceFiles
 
 set(headerFiles
     include/Grenouille/Application.hpp
+    include/Grenouille/ApplicationBuilder.hpp
 )
 add_library(Grenouille ${sourceFiles} ${headerFiles})
 

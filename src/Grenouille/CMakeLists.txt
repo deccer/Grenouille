@@ -14,6 +14,7 @@ add_library(Grenouille ${sourceFiles} ${headerFiles})
 
 find_package(OpenGL REQUIRED)
 
+add_compile_options(-Wall -Wextra -Werror)
 target_include_directories(glfw PUBLIC include)
 target_include_directories(glad PUBLIC include)
 target_include_directories(imgui PUBLIC include)

@@ -15,4 +15,4 @@ endif ()
 
 add_subdirectory(lib)
 add_subdirectory(src/Grenouille)
-add_subdirectory(examples/HelloWindow)
+add_subdirectory(examples)

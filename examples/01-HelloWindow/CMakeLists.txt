@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 project(HelloWindow)
 
-add_custom_target(copy_data ALL COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_SOURCE_DIR}/data ${CMAKE_CURRENT_BINARY_DIR}/data)
-
 target_include_directories(imgui PUBLIC include)
 target_include_directories(spdlog PUBLIC include)
 

@@ -12,7 +12,6 @@ public:
 protected:
     void AfterCreatedUiContext() override;
     void BeforeDestroyUiContext() override;
-    bool Initialize() override;
     bool Load() override;
     void RenderScene() override;
     void RenderUI() override;

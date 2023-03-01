@@ -1,3 +1,4 @@
+#include "Grenouille/Application.hpp"
 #define CGLTF_IMPLEMENTATION
 #include <cgltf.h>
 #define STB_IMAGE_IMPLEMENTATION
@@ -20,6 +21,16 @@ void HelloDeviceApplication::AfterCreatedUiContext()
 
 void HelloDeviceApplication::BeforeDestroyUiContext()
 {
+}
+
+bool HelloDeviceApplication::Initialize()
+{
+    if (!Application::Initialize())
+    {
+        return false;
+    }
+
+    return true;
 }
 
 bool HelloDeviceApplication::Load()

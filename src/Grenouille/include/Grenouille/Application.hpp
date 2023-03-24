@@ -25,6 +25,8 @@ protected:
     virtual void RenderUI();
     virtual void Update();
 
+    GLFWwindow* GetWindowHandle();
+
 private:
     GLFWwindow* _windowHandle = nullptr;
     std::string _title;

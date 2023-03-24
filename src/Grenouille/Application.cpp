@@ -180,3 +180,8 @@ void Application::AfterCreatedUiContext()
 void Application::BeforeDestroyUiContext()
 {
 }
+
+GLFWwindow* Application::GetWindowHandle()
+{
+    return _windowHandle;
+}

@@ -1,0 +1,1 @@
+#include <Grenouille/Resource.hpp>

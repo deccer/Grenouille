@@ -18,4 +18,8 @@ public:
 
     void Present(uint32_t syncInterval, PresentFlags presentFlags);
     void ResizeBuffers(uint32_t bufferCount, uint32_t width, uint32_t height, Format format, SwapchainFlags swapchainFlags);
+
+private:
+    SwapchainDescriptor _swapchainDescriptor;
+    uint32_t _syncInterval;
 };

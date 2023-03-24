@@ -5,6 +5,23 @@ add_subdirectory(lib)
 
 set(sourceFiles
     Application.cpp
+    BlendState.cpp
+    Buffer.cpp
+    ComputeShader.cpp
+    DepthStencilState.cpp
+    DepthStencilView.cpp
+    Device.cpp
+    DeviceContext.cpp
+    InputLayout.cpp
+    PixelShader.cpp
+    RasterizerState.cpp
+    RenderTargetView.cpp
+    Resource.cpp
+    SamplerState.cpp
+    ShaderResourceView.cpp
+    Swapchain.cpp
+    UnorderedAccessView.cpp
+    VertexShader.cpp
 )
 
 set(headerFiles

@@ -13,12 +13,12 @@ struct GLFWwindow;
 
 struct SwapchainDescriptor
 {
-    ModeDescriptor ModeDescriptor;
-    SampleDescriptor SampleDescriptor;
-    BufferUsage BufferUsage;
-    uint32_t BufferCount;
-    GLFWwindow* WindowHandle;
-    bool IsWindowed;
-    SwapEffect SwapEffect;
-    SwapchainFlags Flags;
+    ModeDescriptor modeDescriptor;
+    SampleDescriptor sampleDescriptor;
+    BufferUsage bufferUsage;
+    uint32_t bufferCount;
+    GLFWwindow* windowHandle;
+    bool isWindowed;
+    SwapEffect swapEffect;
+    SwapchainFlags flags;
 };

@@ -111,7 +111,7 @@ void DeviceContext::IASetInputLayout(InputLayout* inputLayout)
 
 void DeviceContext::IASetPrimitiveTopology(PrimitiveTopology primitiveTopology)
 {
-
+    _currentPrimitiveTopology = primitiveTopology;
 }
 
 void DeviceContext::IASetVertexBuffer(uint32_t startSlot, uint32_t numBuffers, Buffer** vertexBuffer, uint32_t* strides, uint32_t* offsets)

@@ -12,4 +12,5 @@ enum class Format
     R32G32B32Float = 6,
     R32G32B32UInt = 7,
     R32G32B32SInt = 8,
+
 };

@@ -1,12 +1,12 @@
 #include <Grenouille/ApplicationBuilder.hpp>
 #include <HelloWindow/HelloWindowApplication.hpp>
 
-int main(int argc, char* argv[])
+int main([[maybe_unused]] int argc, [[maybe_unused]] char* argv[])
 {
     ApplicationBuilder<HelloWindowApplication> applicationBuilder;
     auto application = applicationBuilder
-        .WithSize(640, 480)
-        .WithTitle("Dummy")
+        .WithSize(1920, 1080)
+        .WithTitle("HelloWindow")
         .Build();
 
     application.Run();

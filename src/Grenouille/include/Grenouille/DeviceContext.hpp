@@ -1,10 +1,7 @@
 #pragma once
 
-#include <Grenouille/Format.hpp>
-#include <Grenouille/PrimitiveTopology.hpp>
-#include <Grenouille/Viewport.hpp>
-
 #include <cstdint>
+#include <map>
 
 class DepthStencilView;
 class RenderTargetView;
@@ -19,7 +16,12 @@ class DepthStencilState;
 class RasterizerState;
 class SamplerState;
 
+enum class Format;
+enum class PrimitiveTopology;
+struct Viewport;
+
 class InputLayout;
+struct InputLayoutDescriptor;
 
 class ComputeShader;
 class VertexShader;
@@ -72,4 +74,8 @@ public:
     void VSSetSamplers(uint32_t startSlot, uint32_t numSamplers, SamplerState** samplers);
     void VSSetShader(VertexShader* vertexShader);
     void VSSetShaderResourceViews(uint32_t startSlot, uint32_t numShaderResourceViews, ShaderResourceView** shaderResourceViews);
+
+private:
+    std::map<InputLayoutDescriptor, InputLayout*> _cachedInputLayouts = {};
+    PrimitiveTopology _currentPrimitiveTopology;
 };

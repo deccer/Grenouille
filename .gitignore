@@ -349,8 +349,8 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
-# CMake
-build/
+# Rider
+.idea/
 
-# clang cache
-.cache
+# Ignore Files in build dir
+build/

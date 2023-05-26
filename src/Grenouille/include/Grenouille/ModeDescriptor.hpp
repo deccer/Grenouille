@@ -7,10 +7,10 @@
 
 struct ModeDescriptor
 {
-    uint32_t Width;
-    uint32_t Height;
-    Rational RefreshRate;
-    Format Format;
-    ScanlineOrder ScanlineOrder;
-    ModeScaling ModeScaling;
+    uint32_t width;
+    uint32_t height;
+    Rational refreshRate;
+    Format format;
+    ScanlineOrder scanlineOrder;
+    ModeScaling modeScaling;
 };

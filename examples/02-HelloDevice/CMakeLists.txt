@@ -14,7 +14,7 @@ set(headerFiles
 add_executable(HelloDevice ${sourceFiles} ${headerFiles})
 add_dependencies(HelloDevice copy_data)
 
-add_compile_options(-Wall -Wextra -Werror)
+target_compile_options(HelloDevice PUBLIC -Wall -Wextra -Werror)
 
 target_include_directories(HelloDevice PRIVATE include)
 target_include_directories(Grenouille PUBLIC include)

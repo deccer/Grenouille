@@ -11,6 +11,7 @@ set(sourceFiles
     DepthStencilState.cpp
     DepthStencilView.cpp
     Device.cpp
+    DeviceChild.cpp
     DeviceContext.cpp
     InputLayout.cpp
     PixelShader.cpp
@@ -20,15 +21,12 @@ set(sourceFiles
     SamplerState.cpp
     ShaderResourceView.cpp
     Swapchain.cpp
+    Texture2D.cpp
     UnorderedAccessView.cpp
     VertexShader.cpp
 )
 
-set(headerFiles
-    include/Grenouille/Application.hpp
-    include/Grenouille/ApplicationBuilder.hpp
-)
-add_library(Grenouille ${sourceFiles} ${headerFiles})
+add_library(Grenouille ${sourceFiles})
 
 find_package(OpenGL REQUIRED)
 

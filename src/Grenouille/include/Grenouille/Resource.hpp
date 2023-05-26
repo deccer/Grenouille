@@ -5,7 +5,7 @@
 class Resource : public DeviceChild
 {
 public:
-    Resource();
+    Resource() = default;
     Resource(const Resource& other) = delete;
     Resource(Resource&& other) = delete;
 

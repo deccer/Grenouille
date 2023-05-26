@@ -5,7 +5,7 @@
 class DeviceChild
 {
 public:
-    DeviceChild();
+    DeviceChild() = default;
     DeviceChild(const DeviceChild& other) = delete;
     DeviceChild(DeviceChild&& other) = delete;
 
